@@ -1,0 +1,14 @@
+.module__graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.module__graph {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .module__graph {
+    margin-top: 30px;
+  }
+}

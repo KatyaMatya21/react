@@ -6,15 +6,15 @@ export default class Player extends React.Component {
     return (
       <div className="player">
         <div className="player__song">
-          <img className="player__image" src="#" width="53" height="52" alt="Обложка альбома" />
+          <img className="player__image" src={this.props.albumcover} width="53" height="52" alt="Обложка альбома" />
             <div className="player__right">
               <div className="player__name-wrap">
-                <p className="player__name">Артист – Название</p>
+                <p className="player__name">{this.props.artist} – {this.props.track.name}</p>
               </div>
               <div className="player__line">
                 <button className="player__button"><span className="visually-hidden">Перемотка</span></button>
               </div>
-              <span className="player__num">Длительность</span>
+              <span className="player__num">{this.props.track.length}</span>
             </div>
         </div>
         <div className="player__controls">
@@ -28,7 +28,7 @@ export default class Player extends React.Component {
             <div className="player__line">
               <button className="player__button"><span className="visually-hidden">Громкость</span></button>
             </div>
-            <span className="player__num">Громкость%</span>
+            <span className="player__num">{this.props.volume}%</span>
           </div>
         </div>
       </div>

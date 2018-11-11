@@ -1,10 +1,11 @@
 import * as React from 'react';
 import './Module.css';
 
+import ModuleData from '../ModuleData/ModuleData';
+
 export default class Module extends React.Component {
   render() {
     return (
-
       <article className={this.props.classes} tabIndex="0">
         <div className="module__top">
           <h3 className="module__title">
@@ -20,7 +21,16 @@ export default class Module extends React.Component {
             <span className="module__date">{this.props.time}</span>
           </p>
         </div>
-        <div className="module__message">{this.props.description}</div>
+
+        <div className="module__message">
+          {this.props.description}
+
+          {this.props.data && (
+            <ModuleData data={this.props.data} />
+          )}
+
+        </div>
+
         <button className="module__close" type="button">
           <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref="#cross"></use>
@@ -34,7 +44,6 @@ export default class Module extends React.Component {
           <span className="visually-hidden">Дальше!</span>
         </button>
       </article>
-
     )
   }
 }

@@ -1,0 +1,21 @@
+@import './../../less/variables';
+
+.module__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 20px;
+
+  @media (min-width: @tablet) {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .button:first-child {
+    margin-right: 5px;
+
+    @media (min-width: @tablet) {
+      margin-right: 20px;
+    }
+  }
+}

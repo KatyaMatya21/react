@@ -1,0 +1,26 @@
+.button {
+  font-size: 20px;
+  font-size: 1.6666666666666667rem;
+  line-height: 23px;
+  line-height: 1.9166666666666667rem;
+  width: 100%;
+  max-width: 120px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+.button--yellow {
+  background-color: #ffd93e;
+}
+.button--yellow:hover,
+.button--yellow:focus {
+  background-color: #ffcd00;
+}
+.button--gray {
+  background-color: #c8c8c8;
+}
+.button--gray:hover,
+.button--gray:focus {
+  background-color: #858585;
+}

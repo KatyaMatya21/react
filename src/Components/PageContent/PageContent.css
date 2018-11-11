@@ -1,0 +1,29 @@
+.page-content {
+  padding-bottom: 20px;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .page-content {
+    padding-bottom: 30px;
+  }
+}
+.page-content__title {
+  font-size: 24px;
+  font-size: 2rem;
+  line-height: 28px;
+  line-height: 2.3333333333333335rem;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .page-content__title {
+    font-size: 36px;
+    font-size: 3rem;
+    line-height: 42px;
+    line-height: 3.5rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}

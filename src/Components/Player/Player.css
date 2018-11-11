@@ -1,0 +1,152 @@
+.player {
+  margin: 0;
+  margin-top: 20px;
+}
+.player__right {
+  position: relative;
+  width: 100%;
+}
+.player__song {
+  display: flex;
+}
+.player__song img {
+  width: 53px;
+  min-width: 53px;
+  height: 53px;
+  margin-right: 10px;
+}
+@media (min-width: 480px) {
+  .player__song img {
+    margin-right: 15px;
+  }
+}
+.player__line {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: calc(100% - 35px);
+  height: 1px;
+  margin-top: 15px;
+  background-color: #979797;
+}
+.player__name-wrap {
+  position: relative;
+  width: 100%;
+  height: 23px;
+  overflow: hidden;
+}
+.player__name {
+  font-size: 18px;
+  font-size: 1.5rem;
+  line-height: 21px;
+  line-height: 1.75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 768px) {
+  .player__name {
+    font-size: 20px;
+    font-size: 1.6666666666666667rem;
+    line-height: 23px;
+    line-height: 1.9166666666666667rem;
+  }
+}
+.player__button {
+  position: absolute;
+  top: -10px;
+  left: 20%;
+  display: block;
+  width: 6px;
+  height: 20px;
+  padding: 0;
+  background-color: #d8d8d8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.player__button:hover,
+.player__button:focus {
+  background-color: #939393;
+}
+.player__num {
+  font-size: 14px;
+  font-size: 1.1666666666666667rem;
+  line-height: 17px;
+  line-height: 1.4166666666666667rem;
+  position: absolute;
+  right: -15px;
+  bottom: 8px;
+  display: block;
+  width: 40px;
+  color: #a1a1a1;
+}
+@media (min-width: 768px) {
+  .player__num {
+    bottom: 5px;
+  }
+}
+.player__controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.player__controls .player__right {
+  width: calc(100% - 130px);
+  overflow: visible;
+}
+.player__controls .player__line {
+  height: 4px;
+  margin: 0;
+  background-color: rgba(216, 216, 216, 0.3);
+  border-radius: 2px;
+}
+.player__controls .player__num {
+  bottom: -6px;
+}
+.player__controls .player__button {
+  top: -6px;
+  left: 70%;
+  width: 16px;
+  height: 16px;
+  background-color: #605757;
+  border-radius: 25px;
+}
+.player__controls .player__button:hover,
+.player__controls .player__button:focus {
+  background-color: #333333;
+}
+.player__controls .player__time {
+  bottom: -8px;
+}
+.player__controls-wrap {
+  display: flex;
+  margin: 0;
+  margin-right: 10px;
+}
+.player__control {
+  display: block;
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("./assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+}
+.player__control:hover,
+.player__control:focus {
+  opacity: 0.8;
+}
+.player__control--prev {
+  margin-right: 10px;
+}
+.player__control--next {
+  transform: rotate(180deg);
+}

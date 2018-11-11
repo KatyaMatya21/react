@@ -1,44 +1,44 @@
-.container {
+.Container {
   max-width: 2000px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 }
 @media (min-width: 768px) {
-  .container {
+  .Container {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 @media (min-width: 1441px) {
-  .container {
+  .Container {
     padding-right: 40px;
     padding-left: 40px;
   }
 }
-.wrap {
+.Wrap {
   max-width: 100%;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 }
 @media (min-width: 768px) {
-  .wrap {
+  .Wrap {
     max-width: 1100px;
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 @media (min-width: 1441px) {
-  .wrap {
+  .Wrap {
     max-width: 2000px;
     padding-right: 40px;
     padding-left: 40px;
   }
 }
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.VisuallyHidden:not(:focus):not(:active),
+input[type="checkbox"].VisuallyHidden,
+input[type="radio"].VisuallyHidden {
   position: absolute;
   width: 1px;
   height: 1px;

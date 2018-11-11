@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {cn} from '@bem-react/classname';
 
 import './Grid.css';
 
@@ -8,11 +9,13 @@ import Module from '../Module/Module';
 
 export default class Grid extends React.Component {
   render() {
+    const Grid = cn('Grid');
+
     const moduleList = Data.events.map((item) => (
       <Module
         key={item.icon}
         type={item.type}
-        classes={`module module--${item.type} module--${item.size}`}
+        size={item.size}
         title={item.title}
         sources={item.source}
         time={item.time}
@@ -23,7 +26,7 @@ export default class Grid extends React.Component {
     ));
 
     return (
-      <div className="grid">{moduleList}</div>
+      <div className={Grid()}>{moduleList}</div>
     )
   }
 }

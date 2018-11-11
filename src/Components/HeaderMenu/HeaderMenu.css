@@ -1,4 +1,4 @@
-.header-menu__list {
+.HeaderMenu-List {
   display: none;
   flex-wrap: wrap;
   margin: 0;
@@ -6,20 +6,17 @@
   list-style: none;
 }
 @media (min-width: 768px) {
-  .header-menu__list {
+  .HeaderMenu-List {
     display: flex;
   }
 }
-.header-menu__item {
+.HeaderMenu-Item {
   margin-right: 26px;
 }
-.header-menu__item:last-child {
+.HeaderMenu-Item:last-child {
   margin-right: 0;
 }
-.header-menu__item--current .header-menu__link {
-  opacity: 1;
-}
-.header-menu__link {
+.HeaderMenu-Link {
   font-size: 16px;
   font-size: 1.3333333333333333rem;
   line-height: 20px;
@@ -29,14 +26,14 @@
   text-decoration: none;
   opacity: 0.6;
 }
-.header-menu__link:hover,
-.header-menu__link:focus {
+.HeaderMenu-Link:hover,
+.HeaderMenu-Link:focus {
   opacity: 0.8;
 }
-.header-menu__link:active {
+.HeaderMenu-Link:active {
   opacity: 1;
 }
-.header-menu__button {
+.HeaderMenu-Button {
   display: block;
   width: 30px;
   height: 30px;
@@ -49,45 +46,45 @@
   border: none;
 }
 @media (min-width: 768px) {
-  .header-menu__button {
+  .HeaderMenu-Button {
     display: none;
   }
 }
-.header-menu--opened {
+.HeaderMenu_opened {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media (min-width: 768px) {
-  .header-menu--opened {
+  .HeaderMenu_opened {
     flex-direction: row;
     align-items: flex-start;
   }
 }
-.header-menu--opened .header-menu__list {
+.HeaderMenu_opened .HeaderMenu-List {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media (min-width: 768px) {
-  .header-menu--opened .header-menu__list {
+  .HeaderMenu_opened .HeaderMenu-List {
     flex-direction: row;
     align-items: flex-start;
   }
 }
-.header-menu--opened .header-menu__item {
+.HeaderMenu_opened .HeaderMenu-Item {
   margin-right: 0;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .header-menu--opened .header-menu__item {
+  .HeaderMenu_opened .HeaderMenu-Item {
     margin-right: 15px;
     margin-bottom: 0;
   }
 }
-.header-menu--opened .header-menu__item:last-child {
+.HeaderMenu_opened .HeaderMenu-Item:last-child {
   margin-bottom: 0;
 }
-.header-menu--opened .header-menu__button {
+.HeaderMenu_opened .HeaderMenu-Button {
   margin-bottom: 10px;
 }

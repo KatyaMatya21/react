@@ -1,4 +1,4 @@
-.module__stats {
+.ModuleStats {
   font-size: 14px;
   font-size: 1.1666666666666667rem;
   line-height: 16px;
@@ -9,7 +9,7 @@
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  .module__stats {
+  .ModuleStats {
     font-size: 18px;
     font-size: 1.5rem;
     line-height: 21px;
@@ -18,25 +18,25 @@
     margin-top: 30px;
   }
 }
-.module__degree,
-.module__humidity {
+.ModuleStats-Degree,
+.ModuleStats-Humidity {
   display: block;
   margin: 0;
 }
-.module__degree strong,
-.module__humidity strong {
+.ModuleStats-Degree strong,
+.ModuleStats-Humidity strong {
   white-space: nowrap;
 }
 @media (min-width: 768px) {
-  .module__degree {
+  .ModuleStats-Degree {
     margin-right: 25px;
   }
 }
-.module__humidity {
+.ModuleStats-Humidity {
   text-align: right;
 }
 @media (min-width: 768px) {
-  .module__humidity {
+  .ModuleStats-Humidity {
     text-align: left;
   }
 }

@@ -1,7 +1,7 @@
 @import './../../less/variables';
 @import './../../less/mixins';
 
-.module__stats {
+.ModuleStats {
   .font-size(14);
   .line-height(16);
 
@@ -19,8 +19,8 @@
   }
 }
 
-.module__degree,
-.module__humidity {
+.ModuleStats-Degree,
+.ModuleStats-Humidity {
   display: block;
   margin: 0;
 
@@ -29,13 +29,13 @@
   }
 }
 
-.module__degree {
+.ModuleStats-Degree {
   @media (min-width: @tablet) {
     margin-right: 25px;
   }
 }
 
-.module__humidity {
+.ModuleStats-Humidity {
   text-align: right;
 
   @media (min-width: @tablet) {

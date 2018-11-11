@@ -1,23 +1,26 @@
 import * as React from 'react';
 
 import './FooterMenu.css';
+import {cn} from '@bem-react/classname';
 
 export default class FooterMenu extends React.Component {
   render() {
+    const FooterMenu = cn('FooterMenu');
+
     return (
-      <nav className="footer-menu">
-        <ul className="footer-menu__list">
-          <li className="footer-menu__item">
-            <a className="footer-menu__link" href="/">Помощь</a>
+      <nav className={FooterMenu()}>
+        <ul className={FooterMenu('List')}>
+          <li className={FooterMenu('Item')}>
+            <a className={FooterMenu('Link')} href="/">Помощь</a>
           </li>
-          <li className="footer-menu__item">
-            <a className="footer-menu__link" href="/">Обратная связь</a>
+          <li className={FooterMenu('Item')}>
+            <a className={FooterMenu('Link')} href="/">Обратная связь</a>
           </li>
-          <li className="footer-menu__item">
-            <a className="footer-menu__link" href="/">Разработчикам</a>
+          <li className={FooterMenu('Item')}>
+            <a className={FooterMenu('Link')} href="/">Разработчикам</a>
           </li>
-          <li className="footer-menu__item">
-            <a className="footer-menu__link" href="/">Условия использования</a>
+          <li className={FooterMenu('Item')}>
+            <a className={FooterMenu('Link')} href="/">Условия использования</a>
           </li>
         </ul>
       </nav>

@@ -1,18 +1,18 @@
 @import './../../less/variables';
 @import './../../less/mixins';
 
-.player {
+.Player {
   margin: 0;
   margin-top: 20px;
 }
 
-.player__right {
+.Player-Right {
   position: relative;
 
   width: 100%;
 }
 
-.player__song {
+.Player-Song {
   display: flex;
 
   img {
@@ -27,7 +27,7 @@
   }
 }
 
-.player__line {
+.Player-Line {
   position: relative;
 
   display: block;
@@ -39,7 +39,7 @@
   background-color: #979797;
 }
 
-.player__name-wrap {
+.Player-NameWrap {
   position: relative;
 
   width: 100%;
@@ -48,7 +48,7 @@
   overflow: hidden;
 }
 
-.player__name {
+.Player-Name {
   .font-size(18);
   .line-height(21);
 
@@ -70,7 +70,7 @@
   }
 }
 
-.player__button {
+.Player-Button {
   position: absolute;
   top: -10px;
   left: 20%;
@@ -92,7 +92,7 @@
   }
 }
 
-.player__num {
+.Player-Num {
   .font-size(14);
   .line-height(17);
 
@@ -110,18 +110,18 @@
   }
 }
 
-.player__controls {
+.Player-Controls {
   display: flex;
   align-items: center;
   margin-top: 20px;
 
-  .player__right {
+  .Player-Right {
     width: calc(100% - 130px);
 
     overflow: visible;
   }
 
-  .player__line {
+  .Player-Line {
     height: 4px;
     margin: 0;
 
@@ -129,11 +129,11 @@
     border-radius: 2px;
   }
 
-  .player__num {
+  .Player-Num {
     bottom: -6px;
   }
 
-  .player__button {
+  .Player-Button {
     top: -6px;
     left: 70%;
 
@@ -148,19 +148,15 @@
       background-color: #333333;
     }
   }
-
-  .player__time {
-    bottom: -8px;
-  }
 }
 
-.player__controls-wrap {
+.Player-ControlsWrap {
   display: flex;
   margin: 0;
   margin-right: 10px;
 }
 
-.player__control {
+.Player-Control {
   display: block;
   width: 53px;
   height: 53px;
@@ -178,10 +174,10 @@
   }
 }
 
-.player__control--prev {
+.Player-Control_type_prev {
   margin-right: 10px;
 }
 
-.player__control--next {
+.Player-Control_type_next {
   transform: rotate(180deg);
 }

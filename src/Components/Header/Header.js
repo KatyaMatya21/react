@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {cn} from '@bem-react/classname';
 
 import './Header.css';
 
@@ -8,11 +9,15 @@ import HeaderMenu from '../HeaderMenu/HeaderMenu';
 
 export default class Header extends React.Component {
   render() {
+    const Header = cn('Header');
+    const VH = cn('VisuallyHidden');
+    const Container = cn('Container');
+
     return (
-      <header className="page-header">
-        <h1 className="visually-hidden">Яндекс Дом</h1>
-        <div className="page-header__inner container">
-          <a className="page-header__logo" href="/"><img src={logo} width="113" height="38" alt="Яндекс Дом"/></a>
+      <header className={Header()}>
+        <h1 className={VH()}>Яндекс Дом</h1>
+        <div className={`${Header('Inner')} ${Container()}`}>
+          <a className={Header('Logo')} href="/"><img src={logo} width="113" height="38" alt="Яндекс Дом"/></a>
           <HeaderMenu />
         </div>
       </header>

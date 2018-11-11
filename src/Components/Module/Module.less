@@ -1,7 +1,7 @@
 @import './../../less/variables';
 @import './../../less/mixins';
 
-.module {
+.Module {
   position: relative;
 
   display: flex;
@@ -16,12 +16,12 @@
     background-color: @gray-dark;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 
-    .module__message {
+    .Module-Message {
       background-color: @gray-dark;
     }
 
-    .module__close,
-    .module__next {
+    .Module-Close,
+    .Module-Next {
       display: none;
 
       @media (min-width: @tablet) {
@@ -31,7 +31,7 @@
   }
 }
 
-.module--critical {
+.Module_type_critical {
   color: #ffffff;
 
   background-color: @orange;
@@ -42,16 +42,16 @@
     background-color: @orange-dark;
   }
 
-  .module__close {
+  .Module-Close {
     color: #ffffff;
   }
 
-  .module__icon {
+  .Module-Icon {
     color: #ffffff;
   }
 }
 
-.module--s {
+.Module_size_s {
   @media (min-width: @mobile-l) {
     grid-column: span 2;
     grid-row: span 1;
@@ -65,14 +65,14 @@
     grid-column: span 2;
   }
 
-  .module__details {
+  .Module-Details {
     @media (min-width: @tablet) {
       display: block;
     }
   }
 }
 
-.module--m {
+.Module_size_m {
   @media (min-width: @mobile-l) {
     grid-column: span 4;
     grid-row: span 1;
@@ -87,7 +87,7 @@
   }
 }
 
-.module--l {
+.Module_size_l {
   @media (min-width: @mobile-l) {
     grid-column: span 4;
     grid-row: span 3;
@@ -102,7 +102,7 @@
     grid-row: span 2;
   }
 
-  .module__message {
+  .Module-Message {
     @media (min-width: @tablet) {
       .font-size(24);
       .line-height(28);
@@ -110,8 +110,8 @@
   }
 }
 
-.module__close,
-.module__next {
+.Module-Close,
+.Module-Next {
   position: absolute;
 
   right: 20px;
@@ -135,15 +135,15 @@
   }
 }
 
-.module__close {
+.Module-Close {
   top: 20px;
 }
 
-.module__next {
+.Module-Next {
   bottom: 20px;
 }
 
-.module__top {
+.Module-Top {
   padding: 15px;
   padding-top: 25px;
 
@@ -156,7 +156,7 @@
   }
 }
 
-.module__title {
+.Module-Title {
   .font-size(14);
   .line-height(17);
 
@@ -182,7 +182,7 @@
   }
 }
 
-.module__name {
+.Module-Name {
   display: -webkit-box;
 
   overflow: hidden;
@@ -191,7 +191,7 @@
   -webkit-box-orient: vertical;
 }
 
-.module__icon {
+.Module-Icon {
   position: absolute;
   top: 50%;
   left: 0;
@@ -221,7 +221,7 @@
   }
 }
 
-.module__details {
+.Module-Details {
   .font-size(12);
   .line-height(14);
 
@@ -235,7 +235,7 @@
   }
 }
 
-.module__type {
+.Module-Type {
   display: block;
 
   @media (min-width: @tablet) {
@@ -244,7 +244,7 @@
   }
 }
 
-.module__date {
+.Module-Date {
   display: block;
 
   text-align: right;
@@ -254,7 +254,7 @@
   }
 }
 
-.module__message {
+.Module-Message {
   .font-size(18);
   .line-height(22);
 

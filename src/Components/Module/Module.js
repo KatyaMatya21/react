@@ -47,7 +47,7 @@ export default class Module extends React.Component {
           <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref="#next"></use>
           </svg>
-          <span className={Module('VH')}>Дальше!</span>
+          <span className={VH()}>Дальше!</span>
         </button>
       </article>
     )

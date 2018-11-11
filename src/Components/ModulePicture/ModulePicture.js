@@ -13,8 +13,8 @@ export default class ModulePicture extends React.Component {
       <React.Fragment>
         <a className="module__picture" href="/">
           <picture>
-            <source srcSet={ cam1w + ' 1x, ' + cam2w + ' 2x'} type="image/webp" />
-            <img className="module__image" src={cam1j} srcSet={ cam1j + ' 1x, ' + cam2j + ' 2x'} alt="Вид с камеры в гостиной" />
+            <source srcSet={cam1w + ' 1x, ' + cam2w + ' 2x'} type="image/webp" />
+            <img className="module__image" src={cam1j} srcSet={cam1j + ' 1x, ' + cam2j + ' 2x'} alt="Вид с камеры в гостиной" />
           </picture>
           <span className="module__indicator"><span className="visually-hidden">Я ползунок!</span></span>
         </a>

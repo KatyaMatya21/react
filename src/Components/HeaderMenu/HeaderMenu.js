@@ -1,11 +1,12 @@
 import * as React from 'react';
+
 import './HeaderMenu.css';
 
 export default class HeaderMenu extends React.Component {
   render() {
     return (
       <nav className="header-menu">
-        <button className="header-menu__button js-menu-button" type="button">
+        <button className="header-menu__button" type="button">
           <span className="visually-hidden">Меню</span>
         </button>
         <ul className="header-menu__list">

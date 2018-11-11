@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './Grid.css';
 
 import * as Data from '../../events.json'
@@ -9,8 +10,9 @@ export default class Grid extends React.Component {
   render() {
     const moduleList = Data.events.map((item) => (
       <Module
+        key={item.icon}
         type={item.type}
-        classes={`module module--${item.type} grid__cell grid__cell--${item.size}`}
+        classes={`module module--${item.type} module--${item.size}`}
         title={item.title}
         sources={item.source}
         time={item.time}

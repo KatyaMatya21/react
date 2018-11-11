@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './ModuleButtons.css';
 
 import Button from '../Button/Button';
@@ -9,7 +10,7 @@ export default class ModuleButtons extends React.Component {
       <React.Fragment>
         <p className="module__buttons">
           {this.props.buttons.map(item => (
-            <Button text={item}/>
+            <Button key={item} text={item}/>
           ))}
         </p>
       </React.Fragment>

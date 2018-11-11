@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './ModulePicture.css';
 
 import cam2w from './assets/robot-cleaner@2x.webp';

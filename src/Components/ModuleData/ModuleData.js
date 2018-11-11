@@ -10,6 +10,7 @@ export default class ModuleData extends React.Component {
   render() {
     return (
       <React.Fragment>
+
         {this.props.data.type === 'graph' && <ModuleGraph />}
 
         {this.props.data.temperature &&

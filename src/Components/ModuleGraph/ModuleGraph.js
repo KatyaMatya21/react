@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './ModuleGraph.css';
 
 import graph from './assets/data.svg';

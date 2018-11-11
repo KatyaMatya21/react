@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './Module.css';
 
 import ModuleData from '../ModuleData/ModuleData';
@@ -22,14 +23,15 @@ export default class Module extends React.Component {
           </p>
         </div>
 
-        <div className="module__message">
-          {this.props.description}
+        {this.props.description && (
+          <div className="module__message">
+            {this.props.description}
 
-          {this.props.data && (
-            <ModuleData data={this.props.data} />
-          )}
-
-        </div>
+            {this.props.data && (
+              <ModuleData data={this.props.data} />
+            )}
+          </div>
+        )}
 
         <button className="module__close" type="button">
           <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">

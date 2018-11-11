@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import './FooterMenu.css';
 
 export default class FooterMenu extends React.Component {

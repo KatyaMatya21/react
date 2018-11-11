@@ -8,7 +8,7 @@ export default class Button extends React.Component {
     const Button = cn('Button');
 
     return (
-      <button className={`${Button()} ${Button({color: this.props.text === 'Да' ? 'yellow' : 'gray' })}`} type="button">{this.props.text}</button>
+      <button className={Button()} type="button">{this.props.text}</button>
     )
   }
 }

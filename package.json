@@ -21,6 +21,7 @@
   "devDependencies": {
     "@bem-react/classname": "^1.1.1",
     "@bem-react/core": "^1.2.0",
+    "@bem-react/di": "^1.0.3",
     "react-router-dom": "^4.3.1"
   },
   "browserslist": [

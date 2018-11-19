@@ -1,4 +1,4 @@
-.button {
+.Button {
   font-size: 20px;
   font-size: 1.6666666666666667rem;
   line-height: 23px;
@@ -10,17 +10,17 @@
   border: none;
   border-radius: 8px;
 }
-.button--yellow {
+.Button_color_yellow {
   background-color: #ffd93e;
 }
-.button--yellow:hover,
-.button--yellow:focus {
+.Button_color_yellow:hover,
+.Button_color_yellow:focus {
   background-color: #ffcd00;
 }
-.button--gray {
+.Button_color_gray {
   background-color: #c8c8c8;
 }
-.button--gray:hover,
-.button--gray:focus {
+.Button_color_gray:hover,
+.Button_color_gray:focus {
   background-color: #858585;
 }

@@ -1,26 +1,26 @@
-.player {
+.Player {
   margin: 0;
   margin-top: 20px;
 }
-.player__right {
+.Player-Right {
   position: relative;
   width: 100%;
 }
-.player__song {
+.Player-Song {
   display: flex;
 }
-.player__song img {
+.Player-Song img {
   width: 53px;
   min-width: 53px;
   height: 53px;
   margin-right: 10px;
 }
 @media (min-width: 480px) {
-  .player__song img {
+  .Player-Song img {
     margin-right: 15px;
   }
 }
-.player__line {
+.Player-Line {
   position: relative;
   display: block;
   width: 100%;
@@ -29,13 +29,13 @@
   margin-top: 15px;
   background-color: #979797;
 }
-.player__name-wrap {
+.Player-NameWrap {
   position: relative;
   width: 100%;
   height: 23px;
   overflow: hidden;
 }
-.player__name {
+.Player-Name {
   font-size: 18px;
   font-size: 1.5rem;
   line-height: 21px;
@@ -50,14 +50,14 @@
   text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
-  .player__name {
+  .Player-Name {
     font-size: 20px;
     font-size: 1.6666666666666667rem;
     line-height: 23px;
     line-height: 1.9166666666666667rem;
   }
 }
-.player__button {
+.Player-Button {
   position: absolute;
   top: -10px;
   left: 20%;
@@ -70,11 +70,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.player__button:hover,
-.player__button:focus {
+.Player-Button:hover,
+.Player-Button:focus {
   background-color: #939393;
 }
-.player__num {
+.Player-Num {
   font-size: 14px;
   font-size: 1.1666666666666667rem;
   line-height: 17px;
@@ -87,29 +87,29 @@
   color: #a1a1a1;
 }
 @media (min-width: 768px) {
-  .player__num {
+  .Player-Num {
     bottom: 5px;
   }
 }
-.player__controls {
+.Player-Controls {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.player__controls .player__right {
+.Player-Controls .Player-Right {
   width: calc(100% - 130px);
   overflow: visible;
 }
-.player__controls .player__line {
+.Player-Controls .Player-Line {
   height: 4px;
   margin: 0;
   background-color: rgba(216, 216, 216, 0.3);
   border-radius: 2px;
 }
-.player__controls .player__num {
+.Player-Controls .Player-Num {
   bottom: -6px;
 }
-.player__controls .player__button {
+.Player-Controls .Player-Button {
   top: -6px;
   left: 70%;
   width: 16px;
@@ -117,19 +117,16 @@
   background-color: #605757;
   border-radius: 25px;
 }
-.player__controls .player__button:hover,
-.player__controls .player__button:focus {
+.Player-Controls .Player-Button:hover,
+.Player-Controls .Player-Button:focus {
   background-color: #333333;
 }
-.player__controls .player__time {
-  bottom: -8px;
-}
-.player__controls-wrap {
+.Player-ControlsWrap {
   display: flex;
   margin: 0;
   margin-right: 10px;
 }
-.player__control {
+.Player-Control {
   display: block;
   width: 53px;
   height: 53px;
@@ -140,13 +137,13 @@
   background-position: 0 0;
   border: none;
 }
-.player__control:hover,
-.player__control:focus {
+.Player-Control:hover,
+.Player-Control:focus {
   opacity: 0.8;
 }
-.player__control--prev {
+.Player-Control_type_prev {
   margin-right: 10px;
 }
-.player__control--next {
+.Player-Control_type_next {
   transform: rotate(180deg);
 }

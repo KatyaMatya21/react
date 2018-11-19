@@ -1,29 +1,44 @@
 import * as React from 'react';
+import {cn} from '@bem-react/classname';
 
 import './HeaderMenu.css';
 
-export default class HeaderMenu extends React.Component {
+export class HeaderMenu extends React.Component {
+
+  attrs = () => {};
+
+  handleClick() {
+    console.log('Click!');
+  }
+
+  handleTouch() {
+    console.log('Touch!');
+  }
+
   render() {
+    const HeaderMenu = cn('HeaderMenu');
+    const VH = cn('VisuallyHidden');
+
     return (
-      <nav className="header-menu">
-        <button className="header-menu__button" type="button">
-          <span className="visually-hidden">Меню</span>
+      <nav className={HeaderMenu()} {...this.attrs()}>
+        <button className={HeaderMenu('Button')} type="button">
+          <span className={VH()}>Меню</span>
         </button>
-        <ul className="header-menu__list">
-          <li className="header-menu__item header-menu__item--current">
-            <a className="header-menu__link" href="/">События</a>
+        <ul className={HeaderMenu('List')}>
+          <li className={HeaderMenu('Item')}>
+            <a className={HeaderMenu('Link')} href="/">События</a>
           </li>
-          <li className="header-menu__item">
-            <a className="header-menu__link" href="/">Сводка</a>
+          <li className={HeaderMenu('Item')}>
+            <a className={HeaderMenu('Link')} href="/">Сводка</a>
           </li>
-          <li className="header-menu__item">
-            <a className="header-menu__link" href="/">Устройства</a>
+          <li className={HeaderMenu('Item')}>
+            <a className={HeaderMenu('Link')} href="/">Устройства</a>
           </li>
-          <li className="header-menu__item">
-            <a className="header-menu__link" href="/">Сценарии</a>
+          <li className={HeaderMenu('Item')}>
+            <a className={HeaderMenu('Link')} href="/">Сценарии</a>
           </li>
-          <li className="header-menu__item">
-            <a className="header-menu__link" href="/">Видеонаблюдение</a>
+          <li className={HeaderMenu('Item')}>
+            <a className={HeaderMenu('Link')} href="/">Видеонаблюдение</a>
           </li>
         </ul>
       </nav>

@@ -1,11 +1,14 @@
 import * as React from 'react';
+import {cn} from '@bem-react/classname';
 
 import './Button.css';
 
 export default class Button extends React.Component {
   render() {
+    const Button = cn('Button');
+
     return (
-      <button className={ 'button ' + ( this.props.text === 'Да' ? 'button--yellow' : 'button--gray' ) } type="button">{this.props.text}</button>
+      <button className={Button()} type="button">{this.props.text}</button>
     )
   }
 }

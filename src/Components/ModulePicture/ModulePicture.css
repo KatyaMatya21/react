@@ -1,14 +1,14 @@
-.module__picture {
+.ModulePicture-Link {
   position: relative;
   display: block;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  .module__picture {
+  .ModulePicture-Link {
     margin-top: 30px;
   }
 }
-.module__indicator {
+.ModulePicture-Indicator {
   position: absolute;
   bottom: 3px;
   left: 20px;
@@ -19,7 +19,7 @@
   border-radius: 2px;
   opacity: 0.8;
 }
-.module__cam-details {
+.ModulePicture-CamDetails {
   font-size: 12px;
   font-size: 1rem;
   line-height: 14px;
@@ -29,14 +29,14 @@
   margin-top: 10px;
 }
 @media (min-width: 768px) {
-  .module__cam-details {
+  .ModulePicture-CamDetails {
     font-size: 20px;
     font-size: 1.6666666666666667rem;
     line-height: 24px;
     line-height: 2rem;
   }
 }
-.module__image {
+.ModulePicture-Image {
   display: block;
   width: 100%;
   height: auto;

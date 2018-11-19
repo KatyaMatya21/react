@@ -1,4 +1,4 @@
-.module__graph {
+.ModuleGraph {
   display: block;
   width: 100%;
   height: auto;
@@ -6,7 +6,7 @@
   border-radius: 20px;
 }
 @media (min-width: 768px) {
-  .module__graph {
+  .ModuleGraph {
     margin-top: 30px;
   }
 }
